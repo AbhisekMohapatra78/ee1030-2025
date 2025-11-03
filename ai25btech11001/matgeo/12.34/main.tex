@@ -1,0 +1,69 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\graphicspath{{./figs/}}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage{caption}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}     
+\usepackage{xparse}
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+\begin{document}
+
+\title{12.34}
+\author{AI25BTECH11001 - ABHISEK MOHAPATRA}
+{\let\newpage\relax\maketitle}
+	
+	 	\textbf{Question}:
+		Let $\vec{A} = 10\vec{I_3}$, where $\vec{I_3}$ is the identity matrix. Find the nullity of $5\vec{A}\brak{\vec{I_3} + \vec{A} + \vec{A}^2}$.
+
+
+\textbf{Solution:}
+Given,
+\begin{align}
+\vec{A} = 10\vec{I_3},\vec{A}^2 = 10^2\vec{I_3},\vec{A}^3 = 10^3\vec{I_3}
+\end{align}
+So,
+\begin{align}
+5\vec{A}\brak{\vec{I_3} + \vec{A} + \vec{A}^2}
+\end{align}
+\begin{align}
+5\brak{\vec{A} + \vec{A}^2 + \vec{A}^3}
+\end{align}
+\begin{align}
+5\brak{10 +100+1000}\vec{I}
+\end{align}
+
+So, rank is 3 and nullity is 0.
+
+\end{document}
+
+
+

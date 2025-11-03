@@ -1,0 +1,78 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\graphicspath{{./figs/}}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage{caption}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}     
+\usepackage{xparse}
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+\begin{document}
+
+\title{12.35}
+\author{AI25BTECH11001 - ABHISEK MOHAPATRA}
+{\let\newpage\relax\maketitle}
+	
+	 	\textbf{Question}:
+Let $\vec{A}$ be a $2\times 2$ real matrix with eigenvalues 1 and -1, and corresponding eigenvectors $\myvec{\sqrt{3}\\1}$ and $\myvec{2\\2}$.If $\vec{A}^{2021} = \myvec{a&b\\c&d}$,find a + b + c + d (round off to 2 decimal places).
+
+\textbf{Solution:}
+Required,
+\begin{align}
+		\myvec{1&1}\vec{A}^{2021}\myvec{1\\1} = a+b+c+d
+\end{align}
+
+
+
+As per Question,
+\begin{align}
+		\vec{A}\myvec{2\\2} = -1\myvec{2\\2}
+\end{align}
+\begin{align}
+		\vec{A}\myvec{1\\1} = -1\myvec{1\\1}
+\end{align}
+\begin{align}
+		\vec{A}^2\myvec{1\\1} = \myvec{1\\1}
+\end{align}
+So,
+\begin{align}
+		\vec{A}^{2021}\myvec{1\\1} = -1\myvec{1\\1}
+\end{align}
+\begin{align}
+		\myvec{1&1}\vec{A}^{2021}\myvec{1\\1} = -1\myvec{1&1}\myvec{1\\1} = -2
+\end{align}
+
+
+
+\end{document}
+
+
+

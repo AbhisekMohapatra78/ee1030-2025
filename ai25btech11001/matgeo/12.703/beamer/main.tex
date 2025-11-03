@@ -1,0 +1,77 @@
+
+\documentclass{beamer}
+\mode<presentation>
+\usepackage{amsmath}
+\usepackage{amssymb}
+%\usepackage{advdate}
+\usepackage{graphicx}
+\graphicspath{{../figs/}}
+\usepackage{adjustbox}
+\usepackage{subcaption}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{mathtools}
+\usepackage{listings}
+\usepackage{url}
+\def\UrlBreaks{\do\/\do-}
+\usetheme{Boadilla}
+\usecolortheme{lily}
+\setbeamertemplate{footline}
+{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=2.25ex,dp=1ex,right]{author in head/foot}%
+    \insertframenumber{} / \inserttotalframenumber\hspace*{2ex} 
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+\setbeamertemplate{navigation symbols}{}
+\let\solution\relax
+\usepackage{gvv}
+\lstset{
+%language=C,
+frame=single, 
+breaklines=true,
+columns=fullflexible
+}
+
+\numberwithin{equation}{section}
+\title{12.703}
+\author{AI25BTECH11001 - ABHISEK MOHAPATRA}
+\begin{document}
+{\let\newpage\relax\maketitle}
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
+
+	 	\textbf{Question}:
+		Let $\vec{V} = {\vec{p} (x) = a_0 + a_1x + a_2x^2 : a_i \epsilon R}$. Define $\vec{T} : V \rightarrow V$ by
+\begin{align}
+		\vec{T}(\vec{p}) = (\vec{p}(0) - \vec{p}(1)) + (\vec{p}(0) + \vec{p}(1)) x + \vec{p}(0) x^2 .
+\end{align}
+Then the sum of eigenvalues of $\vec{T}$ equals.
+
+
+\textbf{Solution:}
+Given,
+\begin{align}
+		\vec{T}(\vec{p}) = (\vec{p}(0) - \vec{p}(1)) + (\vec{p}(0) + \vec{p}(1)) x + \vec{p}(0) x^2 .
+\end{align}
+Or,
+\begin{align}
+		\vec{T}\vec{p} = \myvec{(\vec{p}(0) - \vec{p}(1)) \\ (\vec{p}(0) + \vec{p}(1)) x \\ \vec{p}(0) x^2 }.
+\end{align} where $\vec{p} = \myvec{a_0\\a_1x\\a_2x^2}$.
+
+
+So, sum of the eigenvalues of T is $trace(\vec{T})$.
+
+a solution can seen is
+\begin{align}
+		\myvec{0&-\frac{1}{x}&-\frac{1}{x^2}\\2x&1&\frac{1}{x}\\x^2&0&0}\vec{p} = \myvec{(\vec{p}(0) - \vec{p}(1)) \\ (\vec{p}(0) + \vec{p}(1)) x \\ \vec{p}(0) x^2 }.
+\end{align}
+So the sum of eigenvalues = 1.
+
+\end{document}
+
+
+

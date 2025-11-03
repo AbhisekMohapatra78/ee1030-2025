@@ -1,0 +1,83 @@
+
+\documentclass{beamer}
+\mode<presentation>
+\usepackage{amsmath}
+\usepackage{amssymb}
+%\usepackage{advdate}
+\usepackage{graphicx}
+\graphicspath{{../figs/}}
+\usepackage{adjustbox}
+\usepackage{subcaption}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{mathtools}
+\usepackage{listings}
+\usepackage{url}
+\def\UrlBreaks{\do\/\do-}
+\usetheme{Boadilla}
+\usecolortheme{lily}
+\setbeamertemplate{footline}
+{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=2.25ex,dp=1ex,right]{author in head/foot}%
+    \insertframenumber{} / \inserttotalframenumber\hspace*{2ex} 
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+\setbeamertemplate{navigation symbols}{}
+\let\solution\relax
+\usepackage{gvv}
+\lstset{
+%language=C,
+frame=single, 
+breaklines=true,
+columns=fullflexible
+}
+
+\numberwithin{equation}{section}
+\title{12.35}
+\author{AI25BTECH11001 - ABHISEK MOHAPATRA}
+\begin{document}
+{\let\newpage\relax\maketitle}
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
+
+
+	 	\textbf{Question}:
+Let $\vec{A}$ be a $2\times 2$ real matrix with eigenvalues 1 and -1, and corresponding eigenvectors $\myvec{\sqrt{3}\\1}$ and $\myvec{2\\2}$.If $\vec{A}^{2021} = \myvec{a&b\\c&d}$,find a + b + c + d (round off to 2 decimal places).
+
+\textbf{Solution:}
+Required,
+\begin{align}
+		\myvec{1&1}\vec{A}^{2021}\myvec{1\\1} = a+b+c+d
+\end{align}
+
+
+
+As per Question,
+\begin{align}
+		\vec{A}\myvec{2\\2} = -1\myvec{2\\2}
+\end{align}
+\begin{align}
+		\vec{A}\myvec{1\\1} = -1\myvec{1\\1}
+\end{align}
+\begin{align}
+		\vec{A}^2\myvec{1\\1} = \myvec{1\\1}
+\end{align}
+So,
+\begin{align}
+		\vec{A}^{2021}\myvec{1\\1} = -1\myvec{1\\1}
+\end{align}
+\begin{align}
+		\myvec{1&1}\vec{A}^{2021}\myvec{1\\1} = -1\myvec{1&1}\myvec{1\\1} = -2
+\end{align}
+
+
+
+\end{document}
+
+
+
+

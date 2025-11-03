@@ -1,0 +1,74 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\graphicspath{{./figs/}}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage{caption}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}     
+\usepackage{xparse}
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+\begin{document}
+
+\title{12.703}
+\author{AI25BTECH11001 - ABHISEK MOHAPATRA}
+{\let\newpage\relax\maketitle}
+	
+	 	\textbf{Question}:
+		Let $\vec{V} = {\vec{p} (x) = a_0 + a_1x + a_2x^2 : a_i \epsilon R}$. Define $\vec{T} : V \rightarrow V$ by
+\begin{align}
+		\vec{T}(\vec{p}) = (\vec{p}(0) - \vec{p}(1)) + (\vec{p}(0) + \vec{p}(1)) x + \vec{p}(0) x^2 .
+\end{align}
+Then the sum of eigenvalues of $\vec{T}$ equals.
+
+
+\textbf{Solution:}
+Given,
+\begin{align}
+		\vec{T}(\vec{p}) = (\vec{p}(0) - \vec{p}(1)) + (\vec{p}(0) + \vec{p}(1)) x + \vec{p}(0) x^2 .
+\end{align}
+Or,
+\begin{align}
+		\vec{T}\vec{p} = \myvec{(\vec{p}(0) - \vec{p}(1)) \\ (\vec{p}(0) + \vec{p}(1)) x \\ \vec{p}(0) x^2 }.
+\end{align} where $\vec{p} = \myvec{a_0\\a_1x\\a_2x^2}$.
+
+
+So, sum of the eigenvalues of T is $trace(\vec{T})$.
+
+a solution can seen is
+\begin{align}
+		\myvec{0&-\frac{1}{x}&-\frac{1}{x^2}\\2x&1&\frac{1}{x}\\x^2&0&0}\vec{p} = \myvec{(\vec{p}(0) - \vec{p}(1)) \\ (\vec{p}(0) + \vec{p}(1)) x \\ \vec{p}(0) x^2 }.
+\end{align}
+So the sum of eigenvalues = 1.
+
+\end{document}
+
+
+
